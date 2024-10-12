@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/popup.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<main class="flex flex-col w-[380px]">
+		<header class="flex justify-center gap-2 py-2 bg-indigo-600">
+			<img src="icons/128.png" class="w-7 invert">
+			<span class="text-white text-xl font-bold">MLA Citation Generator</span>
+		</header>
+
+		<section class="flex flex-col gap-3 p-2">
+			<textarea class="border p-2 text-sm rounded resize-none h-40" readonly>This is some text</textarea>
+
+			<button class="bg-indigo-600 hover:bg-indigo-700 text-white py-1.5 rounded text-sm">Copy to Clipboard</button>
+			
+			<div id="success-msg" class="text-sm text-green-700 rounded border-s-4 border-green-500 bg-green-50 p-4 hidden"></div>
+			<div id="error-msg" class="text-sm text-red-700 rounded border-s-4 border-red-500 bg-red-50 p-4 hidden"></div>
+		</section>
+	</main>
+	<script src="js/popup.js"></script>
+</body>
+
+</html>
