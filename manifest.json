@@ -1,0 +1,26 @@
+{
+    "name": "Works Cited Chrome Extension",
+    "description": "Instantly generate and copy MLA citations for the current webpage with one click. Simple, fast, and accurate.",
+    "version": "1.0.0",
+    "manifest_version": 3,
+	"author": {
+		"name": "Kevin Liu",
+		"url": "https://k4vinliu.com"
+	},
+    "action": {
+        "default_popup": "popup.html"
+    },
+	"icons": {
+		"24": "icons/24.png",
+		"32": "icons/32.png",
+		"64": "icons/64.png",
+		"128": "icons/128.png"
+	},
+	"content_scripts": [
+		{
+			"matches": ["http://*/*", "https://*/*"],
+			"js": ["js/content.js"],
+			"run_at": "document_start"
+		}
+	]
+}
